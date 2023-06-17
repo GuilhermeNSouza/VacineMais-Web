@@ -1,0 +1,149 @@
+:root {
+    --font-main: 'Roboto';
+    --color-main: #1C3D32;
+    --color-secondary: #4FAB8C;
+    --color-light: #ADE3D1;
+    --color-deep: #485E57;
+    --white: #ffffff;
+    --gradient-main: linear-gradient(151deg, rgba(28,61,50,1) 3%, rgba(79,171,140,1) 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagem-carrosel {
+    object-fit: cover;
+    object-position: 0 50%;
+    height: 42.5rem;
+}
+
+.hover-green-main:hover {
+    color: var(--color-main) !important;
+    transition: 0.4s;
+}
+
+.hover-boder-inline {
+    border-bottom: 4px solid transparent;
+    transition: 0.4s;
+}
+
+.hover-boder-inline:hover {
+    border-bottom: 4px solid var(--color-light) ;
+}
+
+.size-logo {
+    min-height: 3rem !important;
+    max-height: 3rem !important;
+    width: 6rem !important;
+}
+
+.btn-color-deep {
+    background-color: var(--color-deep) !important;
+    color: var(--white) !important;
+    font-size: 1.2rem !important;
+    transition: 0.5s;
+}
+
+.btn-color-deep:hover {
+    background: var(--color-main) !important;
+    border-color: var(--color-deep) !important;
+}
+
+.btn-outline-custom-color-light {
+    color: var(--color-light) !important;
+    border-color: var(--color-light) !important;
+    transition: 0.5s;
+}
+
+.btn-outline-custom-color-light:hover {
+    color: var(--white) !important;
+    background: var(--color-deep) !important;
+}
+
+.bg-gradient-main {
+    background: rgb(78, 195, 224);
+    background: var(--gradient-main);
+}
+
+.bg-color-deep {
+    background: var(--color-deep);
+}
+
+.bg-color-main {
+    background: var(--color-main);
+}
+
+.bg-color-secondary {
+    background: var(--color-secondary) !important;
+}
+
+.bg-glassmorphim {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.bg-banner-quem-somos {
+    background: url('../img/banner-apresentation-2.png');
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.over-another {
+    position: relative;
+    margin-top: -2.8rem;
+    z-index: 1000;
+}
+
+/*Inicio navbar*/
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #262626;
+}
+
+.change-color-scroll {
+    transition: 0.5s !important;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.navbar-brand {
+    font-size: unset;
+    height: 3.5rem;
+}
+
+/*Fim navbar*/
+
+@media(max-width: 768px){
+    .imagem-carrosel{
+        object-position: 50% 50%;
+        height: 29.5rem;
+    }
+
+    .bg-banner-quem-somos{
+        background-position: 59% 10%;
+    }
+}
