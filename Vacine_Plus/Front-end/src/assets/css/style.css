@@ -1,11 +1,11 @@
 :root {
     --font-main: 'Roboto';
-    --color-main: #1C3D32;
-    --color-secondary: #4FAB8C;
-    --color-light: #ADE3D1;
-    --color-deep: #485E57;
+    --color-main: #2b6388;
+    --color-secondary: #43c3dd;
+    --color-light: #f2faff;
+    --color-deep: #294f7e;
     --white: #ffffff;
-    --gradient-main: linear-gradient(151deg, rgba(28,61,50,1) 3%, rgba(79,171,140,1) 100%);
+    --gradient-main: linear-gradient(151deg, rgb(35, 76, 119) 3%, rgb(104, 179, 220) 100%);
 }
 * {
     margin: 0;
@@ -80,14 +80,14 @@
 }
 
 .bg-glassmorphim {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(3, 193, 251, 0.2);
+    box-shadow: 0 4px 30px rgba(20, 118, 166, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
 
 .bg-banner-quem-somos {
-    background: url('../img/banner-apresentation-2.png');
+    background: url('../img/_Logotipo.png');
     height: 75vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
-    color: #262626;
+    color: #19b1c8;
 }
 
 .change-color-scroll {
@@ -116,7 +116,7 @@
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
-    color: #262626;
+    color: #1133b8;
 }
 
 /* Color of the navbar AFTER scroll */
