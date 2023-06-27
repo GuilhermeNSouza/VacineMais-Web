@@ -14,19 +14,16 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
         h1 {
             color: #fff; /* Título em branco */
         }
-
         .navbar {
             display: flex;
-            justify-content: flex-end; /* Alinhar à direita */
+            justify-content: flex-end; /* Alinhar à direita ok*/
             padding: 10px;
             margin-bottom: 20px;
             animation: slideInFromTop 0.5s ease-out; /* Animação de entrada */
         }
-
         .navbar button {
             background-color: transparent;
             border: none;
@@ -37,7 +34,6 @@
             cursor: pointer;
             animation: fadeIn 0.5s ease-out; /* Animação de entrada */
         }
-
         button:nth-of-type(3) {
             border: 2px solid #5096ff;
             padding: 5px 10px;
@@ -45,13 +41,11 @@
             background-color:#5096ff;
             color: #fff;
         }
-
         .logo {
             position: absolute;
             top: 20px;
             left: 20px;
         }
-
         .vacina {
             background-color: #fff; /* Fundo branco para cada vacina */
             color: #333; /* Texto preto para cada vacina */
@@ -62,21 +56,17 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             animation: fadeIn 0.5s ease-out; /* Animação de entrada */
         }
-
         .vacina:hover {
             background-color: #f9f9f9;
         }
-
         .comprovante {
             display: none;
             margin-top: 10px;
         }
-
         .comprovante img {
             max-width: 100%;
             border-radius: 5px;
         }
-
         @keyframes slideInFromTop {
             0% {
                 transform: translateY(-100%);
@@ -85,7 +75,6 @@
                 transform: translateY(0);
             }
         }
-
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -110,20 +99,17 @@
                     }
                 });
             }
-
             var filtrarBtn = document.getElementById("filtrar-btn");
             filtrarBtn.addEventListener("click", function () {
                 var filtroData = document.getElementById("filtro-data").value;
                 filtrarVacinas(filtroData);
             });
         });
-
         function filtrarVacinas(dataFiltro) {
             var vacinas = document.getElementsByClassName("vacina");
             for (var i = 0; i < vacinas.length; i++) {
                 var vacina = vacinas[i];
-                var dataVacina = vacina.getAttribute("data-data");
-
+                var dataVacina = vacina.getAttribute("data-data.");
                 if (dataVacina === dataFiltro) {
                     vacina.style.display = "block";
                 } else {
@@ -131,14 +117,21 @@
                 }
             }
         }
+        function exibirMensagem() {
+        alert("Mensagem enviada com sucesso.");
+    }
+     
+</script>
+        
     </script>
 </head>
 <body>
     <img class="logo" src="caminho/para/logo.png" alt="Logo do Projeto">
     <div class="navbar">
-        <button>Início</button>
-        <button>Quem Somos</button>
-        <button>Contato</button>
+        <button onclick="window.location.href='index.html'">Inicio</button>
+        <button onclick="window.location.href='quem-somos.html'">Quem Somos</button>
+        <button onclick="window.location.href='validacao.html'">historico</button>
+        <button onclick="window.location.href='contato.html'">Contato</button>
     </div>
     <h1>Histórico de Vacinas</h1>
     <input type="date" id="filtro-data">
@@ -185,5 +178,14 @@
             <img src="https://www.bacabal.ma.gov.br/uploads/images/2021/11/prefeitura-de-bacabal-vai-exigir-comprovante-de-vacinacao-em-eventos-e-locais-publicos-e-privados-1637593555.jpg" alt="Comprovante Vacina 6">
         </div>
     </div>
+    <div>
+        <footer class="modal-footer">
+                    <button onclick="window.location.href='index.html'">Fechar</button>
+                    <button onclick="exibirMensagem()">Enviar</button>
+          </footer>
+    </div>
 </body>
 </html>
+
+
+
